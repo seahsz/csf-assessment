@@ -98,6 +98,7 @@ public class RestaurantService {
         .append("order_id", orderId)
         .append("payment_id", paymentId)
         .append("username", username)
+        .append("total", totalPrice)
         .append("timestamp", new Date(paymentDate))
         .append("items", items);
 

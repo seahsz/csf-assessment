@@ -28,7 +28,7 @@ COPY server/pom.xml .
 # Remove the * from browser/* because * only copies direct files, not the subdirectories!!!
 COPY --from=ngBuilder /ngSrc/dist/client/browser/ src/main/resources/static/
 
-RUN chmod a+x mvnw && ./mvnw package -Dmaven.test.skip-true
+RUN chmod a+x mvnw && ./mvnw package -Dmaven.test.skip=true
 
 # Copy the JAR file over to the final container
 FROM eclipse-temurin:23-jre
