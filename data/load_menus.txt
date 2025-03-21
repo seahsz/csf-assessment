@@ -1,0 +1,4 @@
+# TODO: Task 1.1
+# Redacted the user and password
+
+mongoimport --uri=mongodb://<user>:<password>@yamanote.proxy.rlwy.net:53488/restaurant?authSource=admin --collection=menus --type=json --jsonArray --file=menus.json
